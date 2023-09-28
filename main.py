@@ -20,4 +20,39 @@ class Bola:
 class Quadrado:
     def __init__(self, tamanho_do_lado):
         self.tamanho_do_lado = tamanho_do_lado
-        
+    
+    def mudarLado(self, novo_Lado):
+        self.tamanho_do_lado = novo_Lado # método que irá trocar o valor do lado
+    
+    def retonarLado(self):
+        return self.tamanho_do_lado
+    
+    def AreaQuadrado(self):
+        areaQuadrado = self.tamanho_do_lado * 2 # calcula a area
+
+# Classe Retangulo
+class Retangulo:
+    def __init__(self, comprimento, largura):
+        self.comprimento = comprimento
+        self.largura = largura
+    
+    def areaRetangulo(self): # calcula a área
+        areaRetangulo = self.comprimento * self.largura
+        return areaRetangulo
+    
+    def perimetroRetangulo(self): # calcula o perímetro
+        perimetroRetangulo = (self.comprimento * 2) + (self.largura * 2)
+        return perimetroRetangulo
+    
+    def mudarComprimento(self, novo_comprimento): # define novo comprimento
+        self.comprimento = novo_comprimento
+    
+    def mudarLargura(self, nova_largura): # define nova largura
+        self.largura = nova_largura
+    
+    def retornarComprimento(self): # retorna o valor do comprimento
+        return self.comprimento
+    
+    def retonarLargura(self): # retorna o valor da largura
+        return self.largura
+    
